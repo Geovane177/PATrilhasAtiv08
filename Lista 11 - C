@@ -1,0 +1,27 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		
+		static int numeros(int a, int b) {
+			return a + b;
+		}	
+		
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("digite 2 numeros: ");
+			int a = int.Parse(Console.ReadLine());
+			int b = int.Parse(Console.ReadLine());
+			
+			Console.WriteLine("soma: " + numeros(a, b));
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
