@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Atividades
+{
+	class Program
+	{
+		static int maior(List <int> num)
+		{
+			return num.Max();
+		}
+		public static void Main(string[] args)
+		{
+			List<int> num = new List<int>();
+			
+			
+			
+			Console.WriteLine("digite a quantidade de numeros da lista: ");
+			int quant = int.Parse(Console.ReadLine());;
+			
+			
+			for (int i = 0; i < quant; i++) {
+				
+				int nume = int.Parse(Console.ReadLine());
+				num.Add(nume);
+				
+			}
+		
+			Console.WriteLine("o maior numero é " + maior(num));
+
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
