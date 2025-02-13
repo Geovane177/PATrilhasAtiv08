@@ -1,0 +1,29 @@
+using System;
+
+namespace Atividades
+{
+	class Program
+	{
+		
+		static int nome(string NumeroLetras) {
+			return NumeroLetras.Length;
+		}	
+		
+		public static void Main(string[] args)
+		{
+			
+			Console.WriteLine("digite um nome: ");
+			String NumeroLetras = Convert.ToString(Console.ReadLine());
+			
+			
+			int resultado = NumeroLetras.Length;
+			
+			Console.WriteLine("Quantidade de letras: " + resultado);
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
