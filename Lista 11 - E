@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+namespace PATrilhasAtiv08
+{
+	class Program
+	{
+		static string concat(List <string> concatenados)
+		{
+			return string.Join("",concatenados);
+		}
+		
+		
+		public static void Main(string[] args)
+		{
+			List<string> concatenados = new List<string>();
+ 	
+ 		Console.WriteLine("Quantas palavras você quer colocar na lista?");
+ 		int quant = int.Parse(Console.ReadLine());
+ 	
+ 		for (int i = 1; i <= quant; i++)
+ 		{
+ 			Console.WriteLine("Digite a "+ i +"° palavra da lista");
+ 			string palavra = Console.ReadLine();
+ 			
+ 			concatenados.Add(palavra);
+ 		}
+ 	
+ 		string resultado =  concat(concatenados);
+ 	Console.WriteLine("Todos os elementos da lista concatenados: " + resultado);
+
+				
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
