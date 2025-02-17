@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+namespace PATrilhasAtiv08
+{
+	class Program
+	{
+		static bool num(int n1){
+			return n1 % 2 == 0;
+		}
+		
+		
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Digite um numero: ");
+			int n1 = int.Parse(Console.ReadLine());
+			
+			bool verificador = num(n1);
+			
+			if (verificador) {
+				Console.WriteLine(true);
+			}else{
+				Console.WriteLine(false);
+			}
+				
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
