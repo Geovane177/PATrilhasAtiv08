@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace PATrilhasAtiv08
+namespace Atividades
 {
 	class Program
 	{
